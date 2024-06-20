@@ -23,8 +23,6 @@ public class SignInTestRunner extends Setup {
     @Test(priority = 1)
     public void visitLogin(){
         signIn.linkSignIn.click();
-        SoftAssert softAssert= new SoftAssert();
-        softAssert.assertEquals("Jingle Bell",signIn.titleCustomerLogin.getText());
         signIn.doLogin();
     }
     @Test(priority = 2,enabled = false)
